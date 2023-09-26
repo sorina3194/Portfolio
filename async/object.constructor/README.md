@@ -9,3 +9,6 @@ Note: It is almost always best to return things rather than putting console.log(
 In this case, return the info string and log it after the function has been called:
 
 console.log(theHobbit.info());
+
+
+loop through the array and display each book
