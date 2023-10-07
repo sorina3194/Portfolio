@@ -8,6 +8,19 @@
 </head>
 <body>
   <h1>Tic Tac Toe</h1>
+  <div class="input-form">
+    <h2>Enter Player Names</h2>
+    <form id="playerForm">
+      <label for="player1">Player 1:</label>
+      <input type="text" id="player1" placeholder="Player 1 Name" required>
+      <br>
+      <label for="player2">Player 2:</label>
+      <input type="text" id="player2" placeholder="Player 2 Name" required>
+      <br>
+      <button id="submitButton" type="submit">Start Game</button>
+    </form>
+  </div>
+  <button id="restartButton" style="display: none;">Restart</button>
   <div class="container">
     <div id="player"></div>
   </div>
