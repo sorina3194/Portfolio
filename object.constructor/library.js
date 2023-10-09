@@ -5,13 +5,26 @@ const bookInputForm = document.getElementById("bookInputForm");
 const booksContainer = document.querySelector('#bookList');
 
 // book prototype
-function Book(title,author,pages,read, image) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
-  this.info = function() {
-    return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read} `
+// function Book(title,author,pages,read, image) {
+//   this.title = title;
+//   this.author = author;
+//   this.pages = pages;
+//   this.read = read;
+//   this.info = function() {
+//     return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read} `
+//   }
+// }
+
+class Book {
+  constructor(title, author, pages, read, image) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+  }
+
+  info() {
+    return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read}`;
   }
 }
 
